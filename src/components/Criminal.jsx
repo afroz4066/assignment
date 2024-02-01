@@ -24,7 +24,7 @@ export default function Criminal() {
                 Jevlal Yadav
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Address : Bihar Patna
+                Address : Patna Bihar
               </Typography>
             </CardContent>
           </Card>
@@ -39,7 +39,7 @@ export default function Criminal() {
                 Jevlal Yadav
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Address : Bihar Patna
+                Address : Patna Biha
               </Typography>
             </CardContent>
           </Card>
@@ -54,7 +54,7 @@ export default function Criminal() {
                 Jevlal Yadav
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Address : Bihar Patna
+                Address : Patna Biha
               </Typography>
             </CardContent>
           </Card>
@@ -69,7 +69,7 @@ export default function Criminal() {
                 Jevlal Yadav
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                Address : Bihar Patna
+                Address : Patna Biha
               </Typography>
             </CardContent>
           </Card>

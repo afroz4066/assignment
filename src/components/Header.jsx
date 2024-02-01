@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import Logo from "../Assets/logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
+import { FaArrowDown } from "react-icons/fa";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
   return (
     <>
-      <div className=" bg-white bg-opacity-40 p-4 border border-white rounded-md w-[90%] mx-auto my-auto mt-3 z-10 h-[10vh] hidden md:flex">
+      <div className=" bg-white bg-opacity-40 p-4 border border-white rounded-md w-[90%] mx-auto my-auto mt-3 z-10 h-[10vh] hidden md:flex ">
         <div className="container mx-auto flex items-center justify-between ">
           {/* Logo */}
           <div className="h-[40px] w-[180px]">
@@ -19,44 +21,37 @@ const Header = () => {
 
           {/* Menu */}
           <nav className="space-x-10 font-semibold ">
-            <a href="#" className="text-black">
+            <a href="#" className="text-black ">
               Home
             </a>
+            <a href="#" className="text-black ">
+              About Us
+              <i className="fa fa-angle-down text-black" />
+            </a>
 
-            {/* About Us Sub-menu */}
-            <div className="group relative inline-block text-black">
-              <a className="cursor-pointer">
-                About Us
-                <i className="fal fa-angle-down" />
-              </a>
-
-              <div className="hidden group-hover:block absolute bg-gray-700">
-                <a href="#" className="block px-6 py-4">
-                  Demo
-                </a>
-                <a href="#" className="block px-6 py-4">
-                  Demo
-                </a>
-              </div>
-            </div>
-
-            <a href="#" className="text-black">
+            <a href="#" className="text-black ">
               Citizen Services
+              <i className="fa fa-angle-down text-black" />
             </a>
-            <a href="#" className="text-black">
+            <a href="#" className="text-black ">
               Helpline No
+              <i className="fa fa-angle-down text-black" />
             </a>
-            <a href="#" className="text-black">
+            <a href="#" className="text-black ">
               Notification
+              <i className="fa fa-angle-down text-black" />
             </a>
-            <a href="#" className="text-black">
+            <a href="#" className="text-black ">
               Download
+              <i className="fa fa-angle-down text-black" />
             </a>
-            <a href="#" className="text-black">
+            <a href="#" className="text-black ">
               Media
+              <i className="fa fa-angle-down text-black" />
             </a>
-            <a href="#" className="text-black">
+            <a href="#" className="text-black ">
               Contact Us
+              <i className="fa fa-angle-down text-black" />
             </a>
           </nav>
         </div>
