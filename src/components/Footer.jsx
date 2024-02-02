@@ -1,135 +1,109 @@
-import * as React from "react";
-
-import AspectRatio from "@mui/joy/AspectRatio";
-import Box from "@mui/joy/Box";
-import IconButton from "@mui/joy/IconButton";
-import Card from "@mui/joy/Card";
-import CardContent from "@mui/joy/CardContent";
-import Divider from "@mui/joy/Divider";
-import Input from "@mui/joy/Input";
-import List from "@mui/joy/List";
-import ListSubheader from "@mui/joy/ListSubheader";
-import ListItem from "@mui/joy/ListItem";
-import ListItemButton from "@mui/joy/ListItemButton";
-import Typography from "@mui/joy/Typography";
-import Sheet from "@mui/joy/Sheet";
-import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import SendIcon from "@mui/icons-material/Send";
+import React from "react";
+import "tailwindcss/tailwind.css";
+import { FaFacebook, FaTwitter, FaYoutube } from "react-icons/fa";
+import myImage from "../Assets/qrcode.png";
 
 const Footer = () => {
-  const [color, setColor] = React.useState("neutral");
   return (
-    <Sheet
-      variant="solid"
-      color={color}
-      invertedColors
-      sx={{
-        ...(color !== "neutral" && {
-          bgcolor: `${color}.800`,
-        }),
-        flexGrow: 1,
-        p: 2,
-        borderRadius: { xs: 0, sm: "sm" },
-      }}
-    >
-      <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-        <Divider orientation="vertical" />
-        <IconButton variant="plain">
-          <FacebookRoundedIcon />
-        </IconButton>
-        <IconButton variant="plain">
-          <GitHubIcon />
-        </IconButton>
-        <Input
-          variant="soft"
-          placeholder="Type in your email"
-          type="email"
-          name="email"
-          endDecorator={
-            <IconButton variant="soft" aria-label="subscribe">
-              <SendIcon />
-            </IconButton>
-          }
-          sx={{ ml: "auto", display: { xs: "none", md: "flex" } }}
-        />
-      </Box>
-      <Divider sx={{ my: 2 }} />
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          alignItems: { md: "flex-start" },
-          justifyContent: "space-between",
-          flexWrap: "wrap",
-          gap: 2,
-        }}
-      >
-        <Card
-          variant="soft"
-          size="sm"
-          sx={{
-            flexDirection: { xs: "row", md: "column" },
-            minWidth: { xs: "100%", md: "auto" },
-            gap: 1,
-          }}
-        >
-          <AspectRatio
-            ratio="21/9"
-            minHeight={80}
-            sx={{ flexBasis: { xs: 200, md: "initial" } }}
-          >
-            <img
-              alt=""
-              src="/static/blog/mui-product-comparison/ecosystem.png"
-            />
-          </AspectRatio>
-          <CardContent>
-            <Typography level="body-sm">Intro to the MUI ecosystem</Typography>
-            <Typography level="body-xs">Blog post</Typography>
-          </CardContent>
-        </Card>
-        <List
-          size="sm"
-          orientation="horizontal"
-          wrap
-          sx={{
-            flexGrow: 0,
-            "--ListItem-radius": "8px",
-            "--ListItem-gap": "0px",
-          }}
-        >
-          <ListItem nested sx={{ width: { xs: "50%", md: 140 } }}>
-            <ListSubheader sx={{ fontWeight: "xl" }}>Sitemap</ListSubheader>
-            <List>
-              <ListItem>
-                <ListItemButton>Services</ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>Blog</ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>About</ListItemButton>
-              </ListItem>
-            </List>
-          </ListItem>
-          <ListItem nested sx={{ width: { xs: "50%", md: 180 } }}>
-            <ListSubheader sx={{ fontWeight: "xl" }}>Products</ListSubheader>
-            <List sx={{ "--ListItemDecorator-size": "32px" }}>
-              <ListItem>
-                <ListItemButton>Joy UI</ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>Base UI</ListItemButton>
-              </ListItem>
-              <ListItem>
-                <ListItemButton>Material UI</ListItemButton>
-              </ListItem>
-            </List>
-          </ListItem>
-        </List>
-      </Box>
-    </Sheet>
+    <div className="m-5 rounded-full">
+      <div className="bg-zinc-900 text-white p-8 rounded-xl">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <div className="mb-6">
+            <h2 className="text-lg mb-4 text-amber-500">OUR CONTACT</h2>
+            <p>Rohtas, Dehri-On-Sone.</p>
+            <p>06184-256200</p>
+            <p>sp-rohtas-bih@nic.in</p>
+
+            <div className="flex space-x-4 mt-4">
+              <a
+                href="http://facebook.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+              >
+                <FaFacebook size={24} />
+              </a>
+              <a
+                href="http://twitter.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+              >
+                <FaTwitter size={24} />
+              </a>
+              <a
+                href="http://youtube.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white"
+              >
+                <FaYoutube size={24} />
+              </a>
+            </div>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-lg mb-4 text-amber-500">Quick Links</h2>
+            <ul>
+              <li>News and Events</li>
+              <li>Press Release</li>
+              <li>Missing Person</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+
+          <div className="mb-6">
+            <h2 className="text-lg mb-4 text-amber-500">Important Links</h2>
+            <ul>
+              <li>Online Complaint</li>
+              <li>Apply Character</li>
+              <li>Passport</li>
+              <li>Feedback / Suggestion</li>
+            </ul>
+          </div>
+
+          <div className="mb-6">
+            <div className="flex">
+              <img
+                src={myImage}
+                alt="QRCode"
+                className="max-w-xs w-40 h-40 items-end ml-10"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div className="flex justify-between flex-wrap md:flex-nowrap items-center border-t border-gray-400 pt-4 mt-6">
+          <div className="flex justify-between items-center   border-gray-400 pt-4 mt-6 rounded-full">
+            <div className="flex items-center">
+              <p className="bg-gray-500 px-2 py-1 rounded-l-full">
+                Total Mobile Application Installed:
+              </p>
+              <span className="bg-gray-900 px-4 py-2 rounded-r-full">
+                89120
+              </span>
+            </div>
+          </div>
+          <div className="flex justify-between items-center   border-gray-400 pt-4 mt-6 rounded-full">
+            <div className="flex items-center">
+              <p className="bg-gray-500 px-2 py-1 rounded-l-full">
+                Total No. of Visitors:
+              </p>
+              <span className="bg-gray-900 px-4 py-2 rounded-r-full">
+                89120
+              </span>
+            </div>
+          </div>
+        </div>
+        <div className="flex justify-between    pt-4 mt-6">
+          <span className=" text-sm">
+            Copyright©2024 Design & Developed by Threepalette creatives &
+            Technocode ninja.
+          </span>
+        </div>
+      </div>
+    </div>
   );
 };
+
 export default Footer;

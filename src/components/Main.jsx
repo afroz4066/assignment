@@ -8,14 +8,20 @@ import Footer from "./Footer";
 import Header from "./Header";
 import Services from "./Services";
 import Gallery from "./Gallery";
+import Press from "./PressRelease";
+
+import ImportantLink from "./ImportantLinks";
+import OurTeam from "./OurTeam";
 const Main = () => {
   return (
     <>
       <Header />
       <HeroSection />
       <Services />
-      {/* <AboutUs /> */}
-
+      <OurTeam />
+      <ImportantLink />
+      <AboutUs />
+      <Press />
       <Gallery />
       <Criminal />
       <News />

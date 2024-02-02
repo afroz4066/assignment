@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Logo from "../Assets/logo.png";
 import { AiOutlineMenu } from "react-icons/ai";
 import { ImCancelCircle } from "react-icons/im";
-import { FaArrowDown } from "react-icons/fa";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -21,7 +20,7 @@ const Header = () => {
 
           {/* Menu */}
           <nav className="space-x-10 font-semibold ">
-            <a href="#" className="text-black ">
+            <a href="" className="text-black ">
               Home
             </a>
             <a href="#" className="text-black ">

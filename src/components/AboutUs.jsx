@@ -1,29 +1,38 @@
 import React from "react";
-import image from "../Assets/aboutus.jpg";
+import Aboutus from "../Assets/aboutus.jpg";
+
 const AboutUs = () => {
   return (
-    <div className="flex justify-between ">
-      <div className="">
-        <img src={image} alt="" />
-      </div>
-      <div className="p-6 ">
-        <h1 className="text-4xl md:text-4xl font-bold md:ml-20">ABOUT US</h1>
-        <h3>
-          Rohtas has an old & interesting history. In pre-historic days the
-          plateau region of the district has been the abode of aboriginals whose
-          chief representatives now are the Bhars, the Cheers and the Oraons.
-          According to some legends the Kherwars were the original settlers in
-          the hilly tracts near Rohtas. The Oraons also claim that they ruled
-          over the area between Rohtas and Patna. The local legend also connects
-          king Sahasrabahu with Sasaram, the headquarter of Rohtas district. It
-          is believed that Sahasrabahu had terrible fight with Saint Parsuram,
-          the legendary Brahmin Protector, as a result of which Sahasrabahu was
-          killed. The term Sahasram is supposed to have been derived from
-          Sahasrabahu and Parsuram. Another legend connects the ROHTAS hill to
-          Rohitashwa, son of Raja Harishchandra, a famous king who was known for
-          his piety and truthfulness. The District of ROHTAS formed a...
-        </h3>
-        <button>Read More </button>
+    <div className="container mx-auto px-4 h-auto">
+      <div className="w-full  px-4">
+        <div className="flex flex-wrap md:flex-nowrap bg-white mb-6 items-center ">
+          {" "}
+          <div className="md:w-1/2 rounded-t-lg md:rounded-tr-none md:rounded-bl-lg overflow-hidden">
+            <img
+              alt="..."
+              src={Aboutus}
+              className="w-[500px] shadow-xl rounded-lg align-middle h-auto p-5"
+            />
+          </div>
+          <div className="md:w-1/2 p-8">
+            <h4 className="text-xl font-bold text-black">ABOUT US</h4>
+            <p className="text-md font-light mt-2 text-gray-700">
+              Rohtas has an old & interesting history. In pre-historic days the
+              plateau region of the district has been the abode of aboriginals
+              whose chief representatives now are the Bhars, the Cheers and the
+              Oraons.Rohtas has an old & interesting history. In pre-historic
+              days the plateau region of the district has been the abode of
+              aboriginals whose chief representatives now are the Bhars, the
+              Cheers and the Oraons. [...]
+            </p>
+            <button
+              className="bg-orange-500 text-white active:bg-orange-600 font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+              type="button"
+            >
+              Read More
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
